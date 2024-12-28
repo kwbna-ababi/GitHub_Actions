@@ -5,7 +5,7 @@ on:
 
 jobs: 
     first_job: 
-        name: ASCII Workflow
+        name: first Workflow
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
