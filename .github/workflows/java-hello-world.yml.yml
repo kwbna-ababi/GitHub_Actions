@@ -2,17 +2,21 @@ name: Java Hello World
 
 # Trigger the workflow on push or pull request events
 on:
-  - push:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
-    name: my first web app
     runs-on: ubuntu-latest
 
     steps:
     # Step 1: Checkout the code from the repository
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
 
     # Step 2: Set up Java
     - name: Set up JDK
