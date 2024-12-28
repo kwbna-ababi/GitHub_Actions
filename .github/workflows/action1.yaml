@@ -1,0 +1,23 @@
+name: ASCII Workflow
+
+on:
+  - push
+
+jobs: 
+    first_job: 
+        name: ASCII Workflow
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+
+            - name: Install Cowsay Program and Execute Cowsay Command
+              run: |
+                sudo apt-get install cowsay -y
+                cowsay -f dragon "Run for cover, I am a DRAGON......RAWR" >> dragon.txt
+                grep -i "dragon" dragon.txt
+
+            - name: Read File
+              run:  |
+                cat dragon.txt 
+                ls -ltra
