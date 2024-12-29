@@ -27,7 +27,7 @@ jobs:
 
     # Step 3: Compile the Hello World application
     - name: Compile Hello World.java
-      run: javac HelloWorld
+      run: javac HelloWorld.java
 
     # Step 4: Run the Hello World application
     - name: Run Hello World
