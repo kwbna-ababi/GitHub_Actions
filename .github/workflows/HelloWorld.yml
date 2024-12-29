@@ -2,13 +2,8 @@ name: Java Hello World
 
 # Trigger the workflow on push or pull request events
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
+  - push
+   
 jobs:
   build:
     runs-on: ubuntu-latest
