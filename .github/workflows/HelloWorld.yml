@@ -26,8 +26,8 @@ jobs:
         java-version: '11'     # Specify the Java version (e.g., 8, 11, or 17)
 
     # Step 3: Compile the Hello World application
-    - name: Compile Hello World.java
-      run: javac ./HelloWorld.java
+    - name: Compile Hello World
+      run: javac HelloWorld.java
 
     # Step 4: Run the Hello World application
     - name: Run Hello World
