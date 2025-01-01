@@ -1,29 +1,29 @@
-name: Java Hello World
+# name: Java Hello World
 
-# Trigger the workflow on push or pull request events
-on:
-  - push
+# # Trigger the workflow on push or pull request events
+# on:
+#   - push
    
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-    # Step 1: Checkout the code from the repository
-    - name: Checkout code
-      uses: actions/checkout@v3
+#     steps:
+#     # Step 1: Checkout the code from the repository
+#     - name: Checkout code
+#       uses: actions/checkout@v3
 
-    # Step 2: Set up Java
-    - name: Set up JDK
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin' # Use the Eclipse Temurin JDK distribution
-        java-version: '11'     # Specify the Java version (e.g., 8, 11, or 17)
+#     # Step 2: Set up Java
+#     - name: Set up JDK
+#       uses: actions/setup-java@v3
+#       with:
+#         distribution: 'temurin' # Use the Eclipse Temurin JDK distribution
+#         java-version: '11'     # Specify the Java version (e.g., 8, 11, or 17)
 
-    # Step 3: Compile the Hello World application
-    - name: Compile Hello World
-      run: javac HelloWorld.java
+#     # Step 3: Compile the Hello World application
+#     - name: Compile Hello World
+#       run: javac HelloWorld.java
 
-    # Step 4: Run the Hello World application
-    - name: Run Hello World
-      run: java HelloWorld
+#     # Step 4: Run the Hello World application
+#     - name: Run Hello World
+#       run: java HelloWorld
