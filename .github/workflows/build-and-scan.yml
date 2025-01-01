@@ -1,9 +1,8 @@
 name: Build and Scan Node.js Application
 
 on:
-  - push:
+  - push
    
-
 jobs:
   build:
     name: Build and Create Artifact
